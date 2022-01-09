@@ -15,5 +15,5 @@ interface ExpensesDao {
     suspend fun insert(expense : ExpensesEntity)
 
     @Query("SELECT* FROM expenses")
-    suspend fun getAllPastPools(): Flow<ExpensesEntity>
+    suspend fun getAllExpenses(): Flow<List<ExpensesEntity>>
 }
