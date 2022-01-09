@@ -3,7 +3,9 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/91745/Desktop/ExpenseTracker/app/src/main/res/drawable/add_list.xml" value="0.2546875" />
         <entry key="..\:/Users/91745/Desktop/ExpenseTracker/app/src/main/res/layout/categories_rv_item.xml" value="0.1793478260869565" />
+        <entry key="..\:/Users/91745/Desktop/ExpenseTracker/app/src/main/res/layout/dashboard_fragment.xml" value="0.1793478260869565" />
         <entry key="..\:/Users/91745/Desktop/ExpenseTracker/app/src/main/res/layout/fragment_first.xml" value="0.1490036231884058" />
       </map>
     </option>
