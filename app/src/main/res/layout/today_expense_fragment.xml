@@ -1,13 +1,36 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".TodayExpenseList.TodayExpenseFragment">
 
     <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="22sp"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/black"
+        android:layout_centerHorizontal="true"
+        android:text="09/01/22"
+        android:id="@+id/date_tv_tef"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/heading_today_expenses"
+        android:text="Today's expenses"
+        android:layout_below="@+id/date_tv_tef"
+        android:layout_centerHorizontal="true"
+        android:textSize="18sp"
+        android:textColor="@color/black"
+        android:layout_marginTop="5dp"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/todays_expense_rv_tef"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="Hello" />
+        android:layout_below="@id/heading_today_expenses"
+        android:layout_marginTop="20dp"
+        android:padding="20dp" />
 
-</FrameLayout>
+</RelativeLayout>

@@ -3,26 +3,48 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nav_graph"
-    app:startDestination="@id/FirstFragment">
+    app:startDestination="@id/dashboardFragment">
 
     <fragment
-        android:id="@+id/FirstFragment"
-        android:name="com.gdsc.expensetracker.CategoriesFragment"
-        android:label="@string/first_fragment_label"
-        tools:layout="@layout/fragment_categories">
-
+        android:id="@+id/dashboardFragment"
+        android:name="com.gdsc.expensetracker.Dashboard.DashboardFragment"
+        android:label="dashboard_fragment"
+        tools:layout="@layout/dashboard_fragment" >
         <action
-            android:id="@+id/action_FirstFragment_to_SecondFragment"
-            app:destination="@id/SecondFragment" />
+            android:id="@+id/action_dashboardFragment_to_categoryListFragment"
+            app:destination="@id/categoryListFragment" />
+        <action
+            android:id="@+id/action_dashboardFragment_to_todayExpenseFragment"
+            app:destination="@id/todayExpenseFragment" />
     </fragment>
     <fragment
-        android:id="@+id/SecondFragment"
-        android:name="com.gdsc.expensetracker.SecondFragment"
-        android:label="@string/second_fragment_label"
-        tools:layout="@layout/fragment_second">
-
+        android:id="@+id/categoryListFragment"
+        android:name="com.gdsc.expensetracker.CategoryList.CategoryListFragment"
+        android:label="category_list_fragment"
+        tools:layout="@layout/category_list_fragment" >
         <action
-            android:id="@+id/action_SecondFragment_to_FirstFragment"
-            app:destination="@id/FirstFragment" />
+            android:id="@+id/action_categoryListFragment_to_dashboardFragment"
+            app:destination="@id/dashboardFragment" />
+        <action
+            android:id="@+id/action_categoryListFragment_to_categoryExpenseFragment"
+            app:destination="@id/categoryExpenseFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/categoryExpenseFragment"
+        android:name="com.gdsc.expensetracker.CategoryExpense.CategoryExpenseFragment"
+        android:label="category_expense_fragment"
+        tools:layout="@layout/category_expense_fragment" >
+        <action
+            android:id="@+id/action_categoryExpenseFragment_to_categoryListFragment"
+            app:destination="@id/categoryListFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/todayExpenseFragment"
+        android:name="com.gdsc.expensetracker.TodayExpenseList.TodayExpenseFragment"
+        android:label="today_expense_fragment"
+        tools:layout="@layout/today_expense_fragment" >
+        <action
+            android:id="@+id/action_todayExpenseFragment_to_dashboardFragment"
+            app:destination="@id/dashboardFragment" />
     </fragment>
 </navigation>

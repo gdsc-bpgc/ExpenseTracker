@@ -1,13 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".CategoryExpense.CategoryExpenseFragment">
 
-    <TextView
+    <EditText
+        android:id="@+id/item_name_et_cef"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/item_amount_et_cef"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:layout_below="@id/item_name_et_cef"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_cef"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="Hello" />
+        android:layout_below="@id/item_amount_et_cef"/>
 
-</FrameLayout>
+</RelativeLayout>

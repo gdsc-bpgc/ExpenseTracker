@@ -8,27 +8,36 @@
     android:layout_height="100dp"
     app:cardCornerRadius="40dp"
     app:cardElevation="40dp"
+    android:id="@+id/category_cv_item"
     app:layout_constraintStart_toStartOf="parent"
     app:layout_constraintTop_toTopOf="parent">
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent">
+
         <ImageView
+            android:id="@+id/category_image_rv_item"
             android:layout_width="60dp"
+            android:layout_height="60dp"
             android:layout_centerVertical="true"
             android:layout_marginLeft="40dp"
-            android:layout_height="60dp"
-            android:id="@+id/category_image_rv_item"
-            android:src="@drawable/ic_launcher_background"/>
+            android:src="@drawable/medicine" />
+
         <TextView
-            android:textSize="18sp"
             android:layout_width="wrap_content"
             android:layout_height="60dp"
-            android:layout_centerVertical="true"
-            android:layout_toRightOf="@id/category_image_rv_item"
-            android:layout_marginLeft="40dp"
+            android:layout_centerInParent="true"
+            android:gravity="center"
             android:text="Demo text"
-            android:gravity="center"/>
+            android:id="@+id/category_name_tv_clrvi"
+            android:textSize="18sp" />
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/ic_baseline_chevron_right_24"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="40dp"/>
     </RelativeLayout>
 </androidx.cardview.widget.CardView>
 </androidx.constraintlayout.widget.ConstraintLayout>
