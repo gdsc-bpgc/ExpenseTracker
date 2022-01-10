@@ -10,5 +10,5 @@ data class Item(
     val itemName : String,
     val itemPrice : Int,
     val category: String,
-    val DateAndTime : String
+    val dateAndTime : Long
 )

@@ -1,6 +1,5 @@
 package com.gdsc.expensetracker.CategoryExpense
 
-import android.icu.util.CurrencyAmount
 import androidx.lifecycle.ViewModelProvider
 import android.os.Bundle
 import android.text.TextUtils
@@ -8,7 +7,6 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.Button
 import android.widget.EditText
 import android.widget.ImageView
 import android.widget.Toast
@@ -20,8 +18,6 @@ import com.gdsc.expensetracker.CategoryExpense.RecyclerView.CategoryExpenseRVAda
 import com.gdsc.expensetracker.R
 import com.gdsc.expensetracker.Room.Item
 import com.gdsc.expensetracker.Room.ItemViewModel
-import java.text.DateFormat
-import java.text.SimpleDateFormat
 import java.util.*
 
 class CategoryExpenseFragment : Fragment() {
@@ -84,15 +80,14 @@ class CategoryExpenseFragment : Fragment() {
     private fun insertDataToDataBase() {
         val itemNameET = view?.findViewById<EditText>(R.id.item_name_et_cef)
         val itemAmountET = view?.findViewById<EditText>(R.id.item_amount_et_cef)
-        val df: DateFormat = SimpleDateFormat("EEE, d MMM yyyy, HH:mm")
 
         val _itemName = itemNameET?.text.toString()
         val _itemPrice = itemAmountET?.text.toString()
-        val dateAndTime = df.format(Calendar.getInstance().time).toString()
+        val dateAndTime = Calendar.getInstance().timeInMillis
 
         if(inputCheck(_itemName,_itemPrice)){
             //Creating Item object
-            val item = Item(0, itemName = _itemName, itemPrice = Integer. parseInt(_itemPrice), category = category, DateAndTime = dateAndTime)
+            val item = Item(0, itemName = _itemName, itemPrice = Integer. parseInt(_itemPrice), category = category, dateAndTime = dateAndTime)
             itemViewModel.addItem(item)
             Toast.makeText(requireContext(),"${_itemName} has been successfully added to the list", Toast.LENGTH_SHORT).show()
         }else{
