@@ -2,7 +2,10 @@ plugins {
     id 'com.android.application'
     id 'kotlin-android'
     id 'kotlin-kapt'
+
 }
+apply plugin: 'kotlin-android'
+apply plugin: "androidx.navigation.safeargs.kotlin"
 
 android {
     compileSdk 31
@@ -33,6 +36,7 @@ android {
     buildFeatures {
         viewBinding true
     }
+
 }
 
 dependencies {
@@ -55,4 +59,9 @@ dependencies {
     implementation "androidx.room:room-runtime:$room_version"
     kapt "androidx.room:room-compiler:$room_version"
     implementation "androidx.room:room-ktx:$room_version"
+    implementation "androidx.core:core-ktx:+"
+    def kotlin_version = "1.6.10"
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+    //radial gauge
+    implementation 'com.github.anastr:speedviewlib:1.6.0'
 }

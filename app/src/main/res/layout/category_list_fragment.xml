@@ -1,10 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".CategoryList.CategoryListFragment">
+    tools:context=".CategoryList.CategoryListFragment"
+    android:orientation="vertical">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Which one is it, this time?"
+        android:textSize="28sp"
+        android:fontFamily="@font/g_bold"
+        android:layout_marginVertical="10dp"
+        android:layout_marginLeft="20dp"/>
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/rv_clf" />
 
 
-
-</FrameLayout>
+</LinearLayout>

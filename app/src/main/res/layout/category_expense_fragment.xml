@@ -1,27 +1,96 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".CategoryExpense.CategoryExpenseFragment">
 
-    <EditText
-        android:id="@+id/item_name_et_cef"
+    <androidx.cardview.widget.CardView
+        android:id="@+id/bottom_card_cef"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:textSize="20sp" />
+        android:layout_height="200dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="-40dp"
+        app:cardCornerRadius="40dp">
 
-    <EditText
-        android:id="@+id/item_amount_et_cef"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:textSize="20sp"
-        android:layout_below="@id/item_name_et_cef"/>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/yellow_gradient">
+
+            <ImageView
+                android:id="@+id/bg_image_cef"
+                android:layout_width="160dp"
+                android:layout_height="160dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="40dp"
+                android:layout_marginTop="40dp"
+                android:src="@drawable/medicine" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="50dp"
+                android:fontFamily="@font/g_bold"
+                android:gravity="center"
+                android:text="Add item"
+                android:textColor="@color/black"
+                android:textSize="24sp" />
+
+            <EditText
+                android:alpha="0.8"
+                android:id="@+id/item_name_et_cef"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="90dp"
+                android:layout_marginRight="100dp"
+                android:background="@color/white"
+                android:hint="Item name"
+                android:padding="5dp"
+                android:textSize="18sp" />
+
+            <EditText
+                android:alpha="0.8"
+                android:hint="item price"
+                android:background="@color/white"
+                android:id="@+id/item_amount_et_cef"
+                android:layout_marginRight="100dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/item_name_et_cef"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:textSize="18sp"
+                android:padding="5dp" />
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+    <androidx.cardview.widget.CardView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        app:cardCornerRadius="25dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="70dp"
+        android:layout_marginRight="20dp"
+        app:cardBackgroundColor="@color/gray"
+        android:id="@+id/add_item_btn_cef">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_baseline_add_24"
+            android:layout_margin="5dp"/>
+    </androidx.cardview.widget.CardView>
+
+
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rv_cef"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_below="@id/item_amount_et_cef"/>
+      android:layout_below="@id/bottom_card_cef"/>
 
 </RelativeLayout>

@@ -12,10 +12,11 @@
         tools:layout="@layout/dashboard_fragment" >
         <action
             android:id="@+id/action_dashboardFragment_to_categoryListFragment"
-            app:destination="@id/categoryListFragment" />
-        <action
-            android:id="@+id/action_dashboardFragment_to_todayExpenseFragment"
-            app:destination="@id/todayExpenseFragment" />
+            app:destination="@id/categoryListFragment"
+            app:enterAnim="@anim/from_right"
+            app:exitAnim="@anim/to_left"
+            app:popEnterAnim="@anim/from_left"
+            app:popExitAnim="@anim/to_right" />
     </fragment>
     <fragment
         android:id="@+id/categoryListFragment"
@@ -27,7 +28,11 @@
             app:destination="@id/dashboardFragment" />
         <action
             android:id="@+id/action_categoryListFragment_to_categoryExpenseFragment"
-            app:destination="@id/categoryExpenseFragment" />
+            app:destination="@id/categoryExpenseFragment"
+            app:enterAnim="@anim/from_right"
+            app:exitAnim="@anim/to_left"
+            app:popEnterAnim="@anim/from_left"
+            app:popExitAnim="@anim/to_right" />
     </fragment>
     <fragment
         android:id="@+id/categoryExpenseFragment"
@@ -37,14 +42,8 @@
         <action
             android:id="@+id/action_categoryExpenseFragment_to_categoryListFragment"
             app:destination="@id/categoryListFragment" />
-    </fragment>
-    <fragment
-        android:id="@+id/todayExpenseFragment"
-        android:name="com.gdsc.expensetracker.TodayExpenseList.TodayExpenseFragment"
-        android:label="today_expense_fragment"
-        tools:layout="@layout/today_expense_fragment" >
-        <action
-            android:id="@+id/action_todayExpenseFragment_to_dashboardFragment"
-            app:destination="@id/dashboardFragment" />
+        <argument
+            android:name="categoryName"
+            app:argType="string" />
     </fragment>
 </navigation>

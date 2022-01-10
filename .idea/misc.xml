@@ -4,12 +4,21 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Users/91745/Desktop/ExpenseTracker/app/src/main/res/drawable/add_list.xml" value="0.2546875" />
+        <entry key="..\:/Users/91745/Desktop/ExpenseTracker/app/src/main/res/drawable/glass.xml" value="0.2546875" />
+        <entry key="..\:/Users/91745/Desktop/ExpenseTracker/app/src/main/res/drawable/gradient_bg.xml" value="0.2546875" />
         <entry key="..\:/Users/91745/Desktop/ExpenseTracker/app/src/main/res/drawable/ic_baseline_chevron_right_24.xml" value="0.2546875" />
         <entry key="..\:/Users/91745/Desktop/ExpenseTracker/app/src/main/res/drawable/reciept.xml" value="0.2546875" />
+        <entry key="..\:/Users/91745/Desktop/ExpenseTracker/app/src/main/res/drawable/strke.xml" value="0.2546875" />
+        <entry key="..\:/Users/91745/Desktop/ExpenseTracker/app/src/main/res/drawable/yellow_gradient.xml" value="0.2546875" />
+        <entry key="..\:/Users/91745/Desktop/ExpenseTracker/app/src/main/res/layout/activity_main.xml" value="0.13020833333333334" />
         <entry key="..\:/Users/91745/Desktop/ExpenseTracker/app/src/main/res/layout/categories_rv_item.xml" value="0.264" />
+        <entry key="..\:/Users/91745/Desktop/ExpenseTracker/app/src/main/res/layout/category_expense_fragment.xml" value="0.1793478260869565" />
         <entry key="..\:/Users/91745/Desktop/ExpenseTracker/app/src/main/res/layout/category_list_fragment.xml" value="0.1793478260869565" />
-        <entry key="..\:/Users/91745/Desktop/ExpenseTracker/app/src/main/res/layout/dashboard_fragment.xml" value="0.1793478260869565" />
+        <entry key="..\:/Users/91745/Desktop/ExpenseTracker/app/src/main/res/layout/dashboard_fragment.xml" value="0.264" />
+        <entry key="..\:/Users/91745/Desktop/ExpenseTracker/app/src/main/res/layout/fragment_categories.xml" value="0.13020833333333334" />
         <entry key="..\:/Users/91745/Desktop/ExpenseTracker/app/src/main/res/layout/fragment_first.xml" value="0.1490036231884058" />
+        <entry key="..\:/Users/91745/Desktop/ExpenseTracker/app/src/main/res/layout/today_exp_rv_item.xml" value="0.264" />
+        <entry key="..\:/Users/91745/Desktop/ExpenseTracker/app/src/main/res/layout/today_expense_fragment.xml" value="0.1793478260869565" />
       </map>
     </option>
   </component>
