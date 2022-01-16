@@ -9,10 +9,10 @@ Radial gauge meter displays the percentage of limit expenditure you spent till t
 ### 3. Categories
 Adding and analyzing expenses becomes easier by the introduction of category in every expenditure.
 
-## Screen shots 
+## Screenshots 
 <img src="https://user-images.githubusercontent.com/73571511/149648573-28e2b46d-5379-4f40-8ae9-0935586bd019.jpg" width="200" height="420" />
 <img src="https://user-images.githubusercontent.com/73571511/149648432-fd54e962-2b91-415b-bf2c-69e1528ebadb.jpg" width="200" height="420" />
-<img src="https://user-images.githubusercontent.com/73571511/149648427-146cff83-5f16-44f6-a2d2-baf1487e0bca.jpg" width="200" height="420"/
+<img src="https://user-images.githubusercontent.com/73571511/149648427-146cff83-5f16-44f6-a2d2-baf1487e0bca.jpg" width="200" height="420"/>
 
 ## Contribution
 Before coming ahead for contribution make sure you know atleast the basics of these concepts:
